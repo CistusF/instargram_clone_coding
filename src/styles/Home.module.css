@@ -186,3 +186,15 @@
     display: none;
   }
 }
+
+@media (max-width:768px) {
+  .main {
+    width: 630px;
+    padding: 50px;
+    padding-top: 30px;
+  }
+
+  .sideProfile {
+    display: none;
+  }
+}
