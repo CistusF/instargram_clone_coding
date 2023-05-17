@@ -16,6 +16,7 @@ html {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+    background-color: #000;
   }
 
   * {
@@ -28,7 +29,8 @@ html {
     --subText: rgba(168, 168, 168);
     --link: rgb(0, 115, 255);
     --footer: #737373;
-    --inbox-bg: #000;
+    --inbox-outBox: rgb(18, 18, 18);
+    --ig-bg: #000;
     --hover-bg: rgba(255, 255, 255, 0.1);
     --searchBar: rgba(38, 38, 38);
   }

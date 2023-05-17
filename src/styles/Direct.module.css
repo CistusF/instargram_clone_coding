@@ -3,14 +3,16 @@
     padding-left: 245px;
     display: flex;
     justify-content: center;
+    background-color: var(--inbox-outBox);
 }
 
 .inbox {
     max-height: calc(100vh - 40px);
     height: calc(100vh - 40px);
     width: 933px;
-    background-color: var(--inbox-bg);
+    background-color: var(--ig-bg);
     border: 1px solid var(--line-color);
+    border-radius: 3px;
 }
 
 .users {
