@@ -66,8 +66,8 @@ export default function Home() {
             <div className={styles.centerSection}>
               <div className={styles.storys}>
                 {
-                  storys.map(({ name }) => {
-                    return <div className={styles.story}>
+                  storys.map(({ name }, index) => {
+                    return <div className={styles.story} key={index}>
                       <Link href="/">
                         <Image src="/userProfile.png" width={56} height={56} alt={"Icon"} />
                         <p className={styles.name}>{name}</p>
@@ -78,7 +78,7 @@ export default function Home() {
               </div>
               <div className={styles.Posts}>
                 <Post name={"CistusF"} img={"http://placehold.it/100x100"} content={"Hello World!"} comments={[]} />
-                <Post name={"ICBM"} img={"http://placehold.it/100x100"} content={"We are not bombs"} comments={[{tag: "CistusF", comment: "We are future."}]} />
+                <Post name={"ICBM"} img={"http://placehold.it/100x100"} content={"We are not bombs"} comments={[{ tag: "CistusF", comment: "We are future." }]} />
               </div>
             </div>
           </div>
@@ -126,8 +126,8 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.footer}>
-              {footerLinks.map((content) => {
-                return <Link href={"/" + content.toLowerCase()} className={styles.item}>
+              {footerLinks.map((content, index) => {
+                return <Link key={index} href={"/" + content.toLowerCase()} className={styles.item}>
                   {content}
                 </Link>
               })}
