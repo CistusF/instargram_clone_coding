@@ -1,0 +1,42 @@
+.container {
+    padding: 20px;
+    padding-left: 245px;
+    display: flex;
+    justify-content: center;
+}
+
+.inbox {
+    max-height: calc(100vh - 40px);
+    height: calc(100vh - 40px);
+    width: 933px;
+    background-color: var(--inbox-bg);
+    border: 1px solid var(--line-color);
+}
+
+.users {
+    width: 350px;
+    border-right: 1px solid var(--line-color);
+    height: 100%;
+    overflow-y: auto;
+}
+
+.me {
+    display: flex;
+    height: 60px;
+    border-bottom: 1px solid var(--line-color);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.me>span {
+    display: flex;
+    align-content: center;
+}
+
+.me>span>svg {
+    margin-left: 10px;
+}
+
+.userList {
+    padding-top: 8px;
+}

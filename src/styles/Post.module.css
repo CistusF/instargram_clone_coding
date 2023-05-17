@@ -1,0 +1,101 @@
+.post {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--line-color);
+    margin-bottom: 12px;
+    padding-bottom: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 470px;
+}
+
+.profile {
+    width: 42px;
+}
+
+.timestamp {
+    color: var(--subText);
+}
+
+.postInfo {
+    display: flex;
+    height: 56px;
+    width: 422px;
+    align-items: center;
+}
+
+.more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+.img {
+    border-radius: 4px;
+}
+
+.buttons {
+    margin-top: 4px;
+    height: 46px;
+    padding-bottom: 6px;
+}
+
+.buttons > svg {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+.bookmark {
+    float: right;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+}
+
+.contents > div {
+    margin-bottom: 8px;
+}
+
+.user {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.content {
+    font-size: 13px;
+}
+
+.comments {
+    color: var(--subText);
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.contents > span {
+    margin-bottom: 8px;
+}
+
+.textarea {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.textarea > textarea {
+    height: 18px;
+    flex-grow: 1;
+    resize: none;
+    color: var(--subText);
+    background-color: var(--bg);
+    border: none;
+}

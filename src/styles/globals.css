@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* white mode */
+html {
+  color: #000;
+}
+
+:root {}
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  * {
+    color: #fff;
+    fill: #fff;
+  }
+
+  :root {
+    --line-color: rgba(38, 38, 38);
+    --subText: rgba(168, 168, 168);
+    --link: rgb(0, 115, 255);
+    --footer: #737373;
+    --inbox-bg: #000;
+    --hover-bg: rgba(255, 255, 255, 0.1);
+  }
+}
