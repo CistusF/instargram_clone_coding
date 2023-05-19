@@ -1,19 +1,11 @@
-.container {
-    padding: 20px;
-    padding-left: 245px;
-    display: flex;
-    justify-content: center;
-    background-color: var(--inbox-outBox);
-}
-
 .inbox {
     display: flex;
-    max-height: calc(100vh - 40px);
-    height: calc(100vh - 40px);
-    width: 933px;
+    height: 100vh;
+    width: 100%;
     background-color: var(--ig-bg);
     border: 1px solid var(--line-color);
     border-radius: 3px;
+    padding-left: 245px;
 }
 
 .users {
@@ -174,16 +166,15 @@
 }
 
 @media (max-width:1263px) {
-    .container {
+    .inbox {
         padding-left: 76px;
     }
 }
 
 @media (max-width: 768px) {
-    .container {
-        padding: 0;
+    .inbox {
+        padding-left: 0;
     }
-
     .users {
         width: 105px;
     }
