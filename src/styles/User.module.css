@@ -14,7 +14,7 @@
     opacity: 0.5;
 }
 
-.user > img {
+.user>img {
     margin-right: 12px;
 }
 
@@ -26,4 +26,18 @@
 
 .lastChat {
     color: var(--subText);
+}
+
+@media (max-width: 768px) {
+    .user {
+        justify-content: center;
+    }
+
+    .user>img {
+        margin: 0;
+    }
+
+    .user>.content {
+        display: none;
+    }
 }

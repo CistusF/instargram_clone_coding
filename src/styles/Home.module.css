@@ -3,6 +3,7 @@
 }
 
 .main {
+  left: 245px;
   width: 630px;
   margin: 0 auto;
 }
@@ -124,7 +125,7 @@
   padding: 8px 16px;
 }
 
-.user > div:first-child {
+.user>div:first-child {
   flex-grow: 1;
 }
 
@@ -132,7 +133,7 @@
   display: flex;
 }
 
-.userInfo > img {
+.userInfo>img {
   margin-right: 12px;
 }
 
@@ -141,7 +142,7 @@
   flex-direction: column;
 }
 
-.flowinfo > .name {
+.flowinfo>.name {
   margin: 0;
 }
 
@@ -154,11 +155,11 @@
   margin-bottom: 16px;
 }
 
-.footer > a::after {
+.footer>a::after {
   content: "•";
 }
 
-.footer > a:last-child::after {
+.footer>a:last-child::after {
   content: "";
 }
 
@@ -179,7 +180,8 @@
 
 @media (max-width:1160px) {
   .main {
-    width: 630px;
+    justify-content: center;
+    left: 73px;
   }
 
   .sideProfile {
@@ -189,12 +191,12 @@
 
 @media (max-width:768px) {
   .main {
-    width: 630px;
-    padding: 50px;
+    left: 0;
+    justify-content: center;
     padding-top: 30px;
   }
 
-  .sideProfile {
-    display: none;
+  .Posts {
+    width: 430px;
   }
 }

@@ -11,6 +11,7 @@
 }
 
 .sidebarItems {
+    background-color: var(--ig-bg);
     height: 100%;
     display: flex;
     padding: 8px 12px 20px 12px;
@@ -95,7 +96,6 @@
 }
 
 .searchBar {
-    position: relative;
     transform: translate(-120%, 0);
     background-color: var(--ig-bg);
     top: 0;
@@ -106,17 +106,21 @@
     height: 100vh;
     border: 1px solid var(--line-color);
     transition: transform 500ms;
-    z-index: -10;
+    z-index: -100;
 }
 
 .searchBar>.header {
-    padding: 20px;
-    height: 155px;
+    padding: 16px;
+    height: 157px; 
     border-bottom: 1px solid var(--line-color);
 }
 
-.header>div {
-    height: 72.5px;
+.header>div:first-child {
+    margin: 10px;
+}
+
+.header> div:last-child {
+    margin-top: 38px;
 }
 
 .search {
@@ -125,6 +129,7 @@
     padding: 0 16px;
     border-radius: 10px;
     border: 0;
+    background-color: var(--searchBar);
 }
 
 @media (max-width:1263px) {
@@ -194,12 +199,17 @@
     }
 
     .brand {
+        opacity: 1;
         font-size: 15px;
         display: block;
         flex-grow: 1;
     }
 
     .bottom {
+        display: none;
+    }
+
+    .sidebar > .searchBar {
         display: none;
     }
 }

@@ -10,6 +10,10 @@ html {
   color: #000;
 }
 
+input:focus {
+  outline: none;
+}
+
 :root {}
 
 /* dark mode */
@@ -32,6 +36,10 @@ html {
     --inbox-outBox: rgb(18, 18, 18);
     --ig-bg: #000;
     --hover-bg: rgba(255, 255, 255, 0.1);
-    --searchBar: rgba(38, 38, 38);
+    --searchBar: #262626;
+    --send-by-me: #3797F0;
+    --send-by-user: #262626;
+    --button-bg: #fff;
+    --button-color: #000;
   }
 }

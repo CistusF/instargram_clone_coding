@@ -46,7 +46,7 @@
     padding-bottom: 6px;
 }
 
-.buttons > svg {
+.buttons>svg {
     width: 40px;
     height: 40px;
     padding: 8px;
@@ -61,7 +61,7 @@
     flex-direction: column;
 }
 
-.contents > div {
+.contents>div {
     margin-bottom: 8px;
 }
 
@@ -80,7 +80,7 @@
     font-size: 13px;
 }
 
-.contents > span {
+.contents>span {
     margin-bottom: 8px;
 }
 
@@ -91,11 +91,17 @@
     margin-bottom: 8px;
 }
 
-.textarea > textarea {
+.textarea>textarea {
     height: 18px;
     flex-grow: 1;
     resize: none;
     color: var(--subText);
     background-color: var(--bg);
     border: none;
+}
+
+@media (max-width:768px) {
+    .post {
+        width: 430px;
+    }
 }
