@@ -1,18 +1,19 @@
 import Image from 'next/image';
 import styles from '@/styles/User.module.css';
+import Link from 'next/link';
 
-export default function User({ tag, comments }: { tag: string, comments: { tag: string, comment: string }[] }) {
+export default function User({ tag, nickname, chats }: { tag: string, nickname: string, chats: { me: boolean, chat: string }[] }) {
     return (
-        <div className={styles.user}>
+        <Link href={'./' + tag} className={styles.user}>
             <Image src="/userProfile.png" width={56} height={56} alt={"Icon"} />
             <div className={styles.content}>
                 <span className={styles.userName}>
-                    {tag}
+                    {nickname}
                 </span>
                 <span className={styles.lastChat}>
-                    {comments[comments.length - 1]?.comment} · 1h
+                    {chats[chats.length - 1]?.chat} · 1h
                 </span>
             </div>
-        </div>
+        </Link>
     )
 }

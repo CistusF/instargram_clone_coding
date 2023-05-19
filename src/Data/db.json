@@ -1,0 +1,28 @@
+{
+    "chatDatas": [
+        {
+            "tag": "jisu",
+            "nickname": "Jisu-park",
+            "chats": [
+                {
+                    "me": false,
+                    "chat": "Hi"
+                },
+                {
+                    "me": true,
+                    "chat": "Hello, world!"
+                }
+            ]
+        },
+        {
+            "tag": "echo",
+            "nickname": "Echo",
+            "chats": [
+                {
+                    "me": false,
+                    "chat": "I am your echo."
+                }
+            ]
+        }
+    ]
+}

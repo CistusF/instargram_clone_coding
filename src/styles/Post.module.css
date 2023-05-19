@@ -11,6 +11,14 @@
     display: flex;
     align-items: center;
     width: 470px;
+    max-width: 430px;
+}
+
+.postInfo {
+    display: flex;
+    height: 56px;
+    align-items: center;
+    flex-grow: 1;
 }
 
 .profile {
@@ -19,13 +27,6 @@
 
 .timestamp {
     color: var(--subText);
-}
-
-.postInfo {
-    display: flex;
-    height: 56px;
-    width: 422px;
-    align-items: center;
 }
 
 .more {
