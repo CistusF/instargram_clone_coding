@@ -78,7 +78,7 @@ export default function Home() {
               </div>
               <div className={styles.Posts}>
                 <Post name={"CistusF"} img={"http://placehold.it/100x100"} content={"Hello World!"} comments={[]} />
-                <Post name={"ICBM"} img={"http://placehold.it/100x100"} content={"We are not bombs"} comments={[{ tag: "CistusF", comment: "We are future." }]} />
+                <Post name={"CistusF"} img={"http://placehold.it/100x100"} content={"I love Node.js"} comments={[]} />
               </div>
             </div>
           </div>

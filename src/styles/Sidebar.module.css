@@ -3,7 +3,7 @@
     -ms-user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
-    min-width: 245px;
+    width: 245px;
     height: 100vh;
     border-right: 1px solid var(--line-color);
     position: fixed;
@@ -22,6 +22,7 @@
 }
 
 .logo {
+    opacity: 1;
     color: var(--color);
     text-decoration: none;
     font-size: 15px;
@@ -34,11 +35,14 @@
 }
 
 .igIcon {
-    display: none;
+    position: absolute;
+    width: 0;
+    transition: width 500ms, height 500ms;
 }
 
-.logo>div>h1 {
+.brand {
     cursor: pointer;
+    transition: opacity 500ms;
 }
 
 .logo>div>h1:active {
@@ -90,21 +94,50 @@
     width: 24px;
 }
 
+.searchBar {
+    position: relative;
+    transform: translate(-120%, 0);
+    background-color: var(--ig-bg);
+    top: 0;
+    left: 73px;
+    position: fixed;
+    border-radius: 0 10px 10px 0;
+    width: 397px;
+    height: 100vh;
+    border: 1px solid var(--line-color);
+    transition: transform 500ms;
+    z-index: -10;
+}
+
+.searchBar>.header {
+    padding: 20px;
+    height: 155px;
+    border-bottom: 1px solid var(--line-color);
+}
+
+.header>div {
+    height: 72.5px;
+}
+
+.search {
+    height: 40px;
+    width: 364px;
+    padding: 0 16px;
+    border-radius: 10px;
+    border: 0;
+}
+
 @media (max-width:1263px) {
-    .igIcon {
-        display: block;
+    .sidebar {
+        width: 73px;
     }
 
-    .logo>div {
-        margin-top: 2px;
+    .igIcon {
+        width: 25px;
     }
 
     .brand {
-        display: none;
-    }
-
-    .sidebar {
-        min-width: 73px;
+        opacity: 0;
     }
 
     .itemName {
